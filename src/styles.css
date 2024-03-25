@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    display: flex;
+    background-image: url(./img/bg_8.jpg); 
+    background-size: cover; 
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    height: 100vh;
+  }
+
+  header {
+    margin: 17vh 0 7vh;
+  }
+
+  .cross {
+    background-image: url(./img/Cross@1.5x.svg);
+    background-size: contain;
+    position: absolute;
+    top: 10vw;
+    left: 6vw;
+    width: 4vw;
+    height: 4vw;
+    fill: none;
+  }
+
+  h1, h2, h3, a {
+    font-family: -apple-system;
+    text-align: center;
+  }
+
+  h1 {
+      font-size: 11vw;
+      font-weight: 860;
+    }
+
+  html[lang="de"] h1 {
+    font-size: 7vw;
+  }
+
+  html[lang="fr"] h1 {
+    font-size: 9vw;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+
+  .products {
+    display: flex;
+    margin-bottom: 4vh;
+  }
+
+  .product_wrapper {
+    position: relative;
+  }
+
+  .product {
+    width: 28vw;
+    height: 37vw;
+    margin: 0 1vw;
+    background-size: cover; 
+  }
+  .item_1 {
+    background-image: url(./img/f1.png);
+  }
+  @media only screen 
+  and (min-device-pixel-ratio : 2) { 
+    .item_1 {
+      background-image: url(./img/f1@2x.png);
+    }
+  }
+  
+  @media only screen 
+  and (min-device-pixel-ratio : 3) { 
+    .item_1 {
+      background-image: url(./img/f1.png);
+      background-image: image-set(
+      url(./img/f1.png) 1x,
+      url(./img/f1@2x.png) 2x,
+      url(./img/f1@3x.png) 3x
+    );
+    }
+  }
+
+  .item_2 {
+    background-image: url(./img/Bitmap.png);
+    background-image: image-set(
+      url(./img/Bitmap.png) 1x,
+      url(./img/Bitmap@2x.png) 2x,
+      url(./img/Bitmap@3x.png) 3x
+    );
+  }
+  .item_3 {
+    background-image: url(./img/f3.png);
+    background-image: image-set(
+      url(./img/f3.png) 1x,
+      url(./img/f3@2x.png) 2x,
+      url(./img/f3@3x.png) 3x
+    );
+  }
+
+  .product_name {
+    position: absolute;
+    bottom: 1vw;
+    left: 3vw;
+    font-weight: 400;
+    font-family: -apple-system;
+    font-size: 3vw;
+  }
+
+  .best_offer {
+    display: flex;
+    background-color: #ffffff;
+    color: #141131;
+    width: 32vw;
+    height: 5vw;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10rem;
+    position: relative;
+    top: 2.5vw;
+    left: 50vw;
+    font-family: -apple-system;
+    font-weight: 700;
+    font-size: 3.5vw;
+  }
+
+  html[lang="de"] .best_offer,
+  html[lang="fr"] .best_offer {
+    font-size: 2.5vw;
+  }
+
+  .yearly_access_wrapper {
+    display: flex;
+    height: 15vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10rem;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2vw;
+    padding-left: 3vw;
+  }
+
+  .selected {
+    border: 1px solid #fff;
+  }
+
+  h2, h3 {
+    font-size: 4.5vw;
+    text-align: left;
+  }
+
+  html[lang="fr"] h2,
+  html[lang="fr"] h3{
+    font-size: 4vw;
+  }
+
+  h2 {
+      font-weight: 600;
+  }
+
+  h3 {
+      font-weight: 400;
+      flex-basis: 35%;
+      opacity: .7;
+  }
+
+  .weekly_access_wrapper {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10rem;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vw;
+    margin-bottom: 2vw;
+    padding-left: 3vw;
+  }
+
+  .btn {
+    color: #070B33;
+    height: 15vw;
+    background-color: #ffffff;
+    border-radius: 10rem;
+    width: -webkit-fill-available;
+    border: none;
+    font-size: 6vw;
+    font-weight: 590;
+  }
+
+  footer {
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: space-evenly;
+    text-align: center;
+    opacity: 0.5;
+    margin-bottom: 2vw;
+  }
+
+  .terms, .policy, .restore {
+    font-size: 3vw;
+    font-weight: 400;
+    letter-spacing: .6px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  html[lang="de"] .terms,
+  html[lang="de"] .policy,
+  html[lang="de"] .restore,
+  html[lang="fr"] .terms,
+  html[lang="fr"] .policy,
+  html[lang="fr"] .restore {
+    font-size: 2.5vw;
+  }
+
+  @media screen and (min-height: 740px) {
+    body {
+      background-image: url(./img/bg_13.jpg); 
+    }
+    header {
+      margin: 29vh 0 4vh;
+    }
+    .cross {
+      top: 18vw;
+    }
+  }
