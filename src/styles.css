@@ -13,6 +13,10 @@ body {
     height: 100vh;
   }
 
+  body::-webkit-scrollbar {
+    display: none;
+}
+
   header {
     margin: 17vh 0 7vh;
   }
